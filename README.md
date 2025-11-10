@@ -85,13 +85,8 @@ If you use any of our code in you work, please cite:
 ```bibtex
 @inproceedings{boguraev-etal-2025-causal,
     title = "Causal Interventions Reveal Shared Structure Across {E}nglish Filler{--}Gap Constructions",
-    author = "Boguraev, Sasha  and
-      Potts, Christopher  and
-      Mahowald, Kyle",
-    editor = "Christodoulopoulos, Christos  and
-      Chakraborty, Tanmoy  and
-      Rose, Carolyn  and
-      Peng, Violet",
+    author = "Boguraev, Sasha  and Potts, Christopher  and Mahowald, Kyle",
+    editor = "Christodoulopoulos, Christos  and Chakraborty, Tanmoy  and Rose, Carolyn  and Peng, Violet",
     booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
     month = nov,
     year = "2025",
@@ -99,8 +94,7 @@ If you use any of our code in you work, please cite:
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2025.emnlp-main.1271/",
     doi = "10.18653/v1/2025.emnlp-main.1271",
-    pages = "25032--25053",
-    ISBN = "979-8-89176-332-6"
+    pages = "25032--25053"
 }
 ```
 Also please cite the original CausalGym paper.
