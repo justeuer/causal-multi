@@ -4,7 +4,7 @@ sys.path.append(".")
 import os, sys ,torch, warnings, argparse
 import pandas as pd
 from tqdm import tqdm
-from transformers import GPTNeoXForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from pyvene.models.intervenable_base import IntervenableModel
 import pyvene as pv
@@ -75,8 +75,8 @@ def eval_generalizations(datasources, trainset, eval_sets, model_id, eval_datase
     
     # Load the model
     datasets = list(datasources.keys())
-    model = GPTNeoXForCausalLM.from_pretrained(model_id) if revision == "main" \
-        else GPTNeoXForCausalLM.from_pretrained(model_id, revision=revision)
+    model = AutoModelForCausalLM.from_pretrained(model_id) if revision == "main" \
+        else AutoModelForCausalLM.from_pretrained(model_id, revision=revision)
 
     # Get save folder based on train_dataset_name and single_double flag
     save_folder = f"results/generalization/{train_dataset_name}/" if not single_double \

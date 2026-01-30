@@ -2,7 +2,12 @@ import torch
 from torch.nn import CrossEntropyLoss
 from utils import get_last_token
 import pyvene as pv
-from data import Batch
+
+try:
+    from data import Batch
+except ImportError:
+    from causalgym.data import Batch
+# from data import Batch
 
 loss_fct = CrossEntropyLoss()
 

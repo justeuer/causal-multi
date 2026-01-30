@@ -1,0 +1,69 @@
+{
+    "3rd_masc_es": {
+        "templates": [
+            "{article} {np}"
+        ],
+        "label": ["article", "np"],
+        "result_prepend_space": false,
+        "labels": {
+            "base": [" son", " están", " fueron", " eran"],
+            "fg": [" es", " está", " fue", " era"]
+        },
+        "variables": {
+            "article": {
+                "base": [" El"],
+                "fg": [" Los"]
+            },
+            "np": {
+                "base": [
+                    "hombre", "estudiante", "profesor", "médico",
+                    "obrero", "cliente", "gerente", "desconocido",
+                    "transeúnte", "voluntario", "enfermero", "ingeniero",
+                    "científico", "autor", "cocinero", "atleta",
+                    "fotógrafo", "bibliotecario" 
+                ],
+                "fg": [
+                    "hombres", "estudiantes", "profesores", "médicos",
+                    "obreros", "clientes", "gerentes", "desconocidos",
+                    "transeúntes", "voluntarios", "enfermeros", "ingenieros",
+                    "científicos", "autores", "cocinero", "atletas",
+                    "fotógrafos", "bibliotecarios" 
+                ]
+            }
+        }
+    },
+
+    "3rd_masc_de": {
+        "templates": [
+            "{article} {np}"
+        ],
+        "label": ["article", "np"],
+        "result_prepend_space": false,
+        "labels": {
+            "base": [" sind", " waren"],
+            "fg": [" ist", " war"]
+        },
+        "variables": {
+            "article": {
+                "base": [" Der"],
+                "fg": [" Die"]
+            },
+            "np": {
+                "base": [
+                    "Mann", "Student", "Lehrer", "Arzt",
+                    "Arbeiter", "Kunde", "Manager", "Fremde",
+                    "Passant", "Freiwillige", "Krankenpfleger", "Ingenieur",
+                    "Wissenschaftler", "Autor", "Koch", "Athlet",
+                    "Fotograf", "Bibliothekar"
+                ],
+                "fg": [
+                    "Männer", "Studenten", "Lehrer", "Ärzte",
+                    "Arbeiter", "Kunden", "Manager", "Fremden",
+                    "Passanten", "Freiwilligen", "Krankenpfleger", "Ingenieure",
+                    "Wissenschaftler", "Autoren", "Köche", "Athleten",
+                    "Fotografen", "Bibliothekare"
+                ]
+            }
+        }
+    }
+}
