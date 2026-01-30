@@ -21,6 +21,20 @@ First, install the requirements:
 
 `pip install -r requirements.txt`
 
+### Experiments
+
+My sample experiment uses mGPT (`ai-forever/mgpt` on Hugging Face) instead of Pythia, although for the sake of German and Spanish this could be switched in.
+
+To run a causal intervention on German/Spanish subject-verb agreement, first train the intervention model on intra-lingual data:
+
+`commands/train_interventions/single_sva.sh`
+
+Then, evaluate cross-lingually:
+
+`commands/eval_interventions/single_sva.sh`
+
+<!-->
+
 ### Run All Experiments
 
 To generate the data for all experiments, please run:
@@ -75,7 +89,7 @@ Once you have generated your data (either through the single command used to run
 - Generate aggregating bar plots:  `gap_generalization_single_double.R`
 - Generate mechanistic plots: `sd_mech_plots.R`
 
-#
+<-->
 
 If you are having any issues running any code, please do not hesitate to reach out or file an issue!
 
